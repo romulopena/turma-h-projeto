@@ -12,7 +12,37 @@
     background-color: var(--branco);
     display: flex;
     justify-content: space-between;
+    position: relative;
 }
+
+.lista-menu{
+    display: none;
+    position: absolute;
+    top: 100%;
+    width: 60vw;
+}
+
+.lista-menu__titulo{
+    color: var(--amarelo);
+}
+.lista-menu__titulo, .lista-menu__item{
+    padding: 1em;
+    background-color: var(--branco);
+}
+
+.lista-menu__link{
+    text-transform: uppercase;
+
+}
+
+.container__botao{
+    display: none;
+}
+
+.container__botao:checked~.lista-menu{
+    display: block;
+}
+
 
 .container{
     display: flex;
