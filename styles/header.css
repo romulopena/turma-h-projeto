@@ -32,6 +32,7 @@
 
 .lista-menu__link{
     text-transform: uppercase;
+    color: var(--roxo);
 
 }
 
